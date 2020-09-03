@@ -9,7 +9,25 @@
  */
 
 // Your code:
-
+const multiply=(a, b)=> {
+   let n = 0;
+   if (a < 0) {
+     n++;
+   }
+   if (b < 0) {
+     n++;
+   }
+   a = Math.abs(a);
+   b = Math.abs(b);
+   let sum = 0;
+   for (let i = 0; i < b; i++) {
+     sum += a;
+   }
+   if (n === 0 || n === 2) {
+     return sum;
+   }
+   return 0 - sum;
+ }
 //* Begin of tests
 const assert = require('assert');
 
