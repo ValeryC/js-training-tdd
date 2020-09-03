@@ -1,4 +1,4 @@
-'use strict';
+        'use strict';
 
 /*
  * Create a `isPositive` function that takes a number as
@@ -8,6 +8,15 @@
  */
 
 // Your code:
+const isPositive = (Number) => {
+    if(Number > 0){
+        return true
+    }
+    else{
+        return false
+    }
+
+}
 
 //* Begin of tests
 const assert = require('assert');
