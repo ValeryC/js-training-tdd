@@ -11,9 +11,28 @@
  */
 
 // Your code:
+const cutFirst = (str) => {
+    return str.substr(2)
+}
+
+const cutLast = (str) => {
+    return str.substr(0,str.length-2)
+}
+
+const cutFirstLast = (str) => {
+    return str.substr(2,str.length-4)
+}
 
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(typeof cutFirst, 'function')
+assert.deepStrictEqual(cutFirst('string'), 'ring');
+
+assert.strictEqual(typeof cutLast, 'function')
+assert.deepStrictEqual(cutLast('string'), 'stri');
+
+assert.strictEqual(typeof cutFirstLast, 'function')
+assert.deepStrictEqual(cutFirstLast('string'), 'ri');
+
 // End of tests */

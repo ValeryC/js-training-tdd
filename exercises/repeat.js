@@ -8,7 +8,9 @@
  */
 
 // Your code:
-
+const repeat = (str, n) => {
+    return Array(n+1).join(str)
+}
 //* Begin of tests
 const assert = require('assert');
 
